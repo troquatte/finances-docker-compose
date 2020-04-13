@@ -1,7 +1,7 @@
 version: '3'
 services:
     postgres:
-        image: finances-postgres
+        image: dtroquatte/finances-postgres
         container_name: postgres
         environment:
             - POSTGRES_PASSWORD=docker
@@ -9,7 +9,7 @@ services:
             - 5432:5432
 
     gateway:
-        image: finance-api-gateway
+        image: dtroquatte/finance-api-gateway
         working_dir: /usr/src/finance-api
         ports:
           - "3333:3333"
@@ -43,7 +43,7 @@ services:
           - "adonis migration:run && adonis seed && npm start"
 
     balance:
-        image: finance-api-balance
+        image: dtroquatte/finance-api-balance
         working_dir: /usr/src/finance-api
         ports:
           - "1010:1010"
@@ -69,7 +69,7 @@ services:
           - "data-expenses"
 
     expenses:
-        image: finance-api-expenses
+        image: dtroquatte/finance-api-expenses
         working_dir: /usr/src/finance-api
         ports:
           - "2020:2020"
@@ -117,9 +117,10 @@ services:
           - "postgres"
 
     web:
-        image: finance-front-end
+        image: dtroquatte/finance-front-end
         working_dir: /app
         ports:
-          - "4200:4200"
+          - "80:80"
         links:
           - "gateway"
+        
