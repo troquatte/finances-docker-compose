@@ -1,5 +1,6 @@
 <h1 align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt="" width="150">
+  <br>
     Desafio feito para Vaga Engenheiro Front-end Itaú.
 </h1>
 
@@ -93,7 +94,6 @@ https://hub.docker.com/repository/docker/dtroquatte/finance-api-data-expenses
 
 #Script Postgres
 https://hub.docker.com/repository/docker/dtroquatte/finances-postgres
-```
 
 ---
 
