@@ -1,7 +1,13 @@
 <h1 align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt="" width="150">
   <br>
-    Desafio feito para Vaga Engenheiro Front-end Itaú
+    Desafio feito para Vaga Engenheiro Front-end Itaú.
+    * Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
+    - Ngx Bootstrap - Lib Angular que ajuda na criação de telas mantida por um grande player de mercado javascript.
+    - MomentJs - Usado para validar datas na aplicação deixando de uma forma mais limpa e clara.
+    <br>
+    * Micro serviços Back-end: Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
+ 
 </h1>
 
 ## :custard: Descrição
@@ -34,6 +40,9 @@ Repositório de arquivos usados na aplicação
 ```bash
 # Docker Copose
 https://github.com/troquatte/finances-docker-compose
+
+# Front-end - Angular
+https://github.com/troquatte/finance-front-end
 
 # Api GateWay
 https://github.com/troquatte/finance-api-gateway
