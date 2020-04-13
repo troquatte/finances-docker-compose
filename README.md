@@ -4,6 +4,10 @@
     Desafio feito para Vaga Engenheiro Front-end Itaú.
 </h1>
 
+## :custard: Descrição
+
+Arquitetura e criação do back-end ( microserviços ), front-end e docker ( compose )
+
 Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
 
 <ul>
@@ -12,12 +16,6 @@ Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde tem
 </ul>
 
 Micro serviços Back-end: Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
-    
-
-
-## :custard: Descrição
-
-Arquitetura e criação do back-end ( microserviços ), front-end e docker ( compose )
 
 ## :information_source: Como usar?
 
