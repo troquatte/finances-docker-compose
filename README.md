@@ -4,20 +4,17 @@
     Desafio feito para Vaga Engenheiro Front-end Itaú.
 </h1>
 
-## :custard: Descrição
-    <p>
-    * Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos 
-      uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
-    </p>
-    <ul>
-      <li>Ngx Bootstrap - Lib Angular que ajuda na criação de telas mantida por um grande player de mercado javascript.</li>
-      <li>MomentJs - Usado para validar datas na aplicação deixando de uma forma mais limpa e clara.</li>
-    </ul>
-    <br>
-    <p>
-    * Micro serviços Back-end: Feito em nodeJs com framework adonisJs, uma ferramenta 
-      bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
-    </p>
+Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
+
+<ul>
+  <li>Ngx Bootstrap - Lib Angular que ajuda na criação de telas mantida por um grande player de mercado javascript.</li>
+  <li>MomentJs - Usado para validar datas na aplicação deixando de uma forma mais limpa e clara.</li>
+</ul>
+
+Micro serviços Back-end: Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
+    
+
+
 ## :custard: Descrição
 
 Arquitetura e criação do back-end ( microserviços ), front-end e docker ( compose )
@@ -94,6 +91,7 @@ https://hub.docker.com/repository/docker/dtroquatte/finance-api-data-expenses
 
 #Script Postgres
 https://hub.docker.com/repository/docker/dtroquatte/finances-postgres
+```
 
 ---
 
