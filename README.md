@@ -29,7 +29,7 @@ $ http:localhost:80
 
 ## :information_source: Arquivos usados
 
-Baixe o arquivo compose docker-compose.yaml
+Repositório de arquivos usados na aplicação
 
 ```bash
 # Docker Copose
@@ -50,6 +50,33 @@ https://github.com/troquatte/finance-api-data-expenses
 #Script Postgres
 https://github.com/troquatte/finance-db-postgres
 
+```
+
+## :information_source: Docker Images
+
+Repositório de arquivos usados na aplicação Docker
+
+```bash
+# Docker Copose
+https://github.com/troquatte/finances-docker-compose
+
+# Front-end - Angular
+https://hub.docker.com/repository/docker/dtroquatte/finance-front-end
+
+# Api GateWay
+https://hub.docker.com/repository/docker/dtroquatte/finance-api-gateway
+
+# Api Balance
+https://hub.docker.com/repository/docker/dtroquatte/finance-api-balance
+
+#Api Expense
+https://hub.docker.com/repository/docker/dtroquatte/finance-api-expenses
+
+#Api Data Expense
+https://hub.docker.com/repository/docker/dtroquatte/finance-api-data-expenses
+
+#Script Postgres
+https://hub.docker.com/repository/docker/dtroquatte/finances-postgres
 ```
 
 ---
