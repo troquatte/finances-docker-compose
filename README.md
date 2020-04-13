@@ -8,14 +8,14 @@
 
 Arquitetura e criação do back-end ( microserviços ), front-end e docker ( compose )
 
-Front-end: Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
+<strong>Front-end:</strong> Foi usado Angular 9 devido sua capacidade de desenvolvimento onde temos uma arquiterura baseada em OOP diferente de outras ferramentas no front-end.
 
 <ul>
   <li>Ngx Bootstrap - Lib Angular que ajuda na criação de telas mantida por um grande player de mercado javascript.</li>
   <li>MomentJs - Usado para validar datas na aplicação deixando de uma forma mais limpa e clara.</li>
 </ul>
 
-Micro serviços Back-end: Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
+<strong>Micro serviços Back-end:</strong> Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
 
 ## :information_source: Como usar?
 
