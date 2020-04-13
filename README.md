@@ -27,6 +27,31 @@ $ http:localhost:80
 
 ```
 
+## :information_source: Arquivos usados
+
+Baixe o arquivo compose docker-compose.yaml
+
+```bash
+# Docker Copose
+https://github.com/troquatte/finances-docker-compose
+
+# Api GateWay
+https://github.com/troquatte/finance-api-gateway
+
+# Api Balance
+https://github.com/troquatte/finances-api-balance
+
+#Api Expense
+https://github.com/troquatte/finance-api-expenses
+
+#Api Data Expense
+https://github.com/troquatte/finance-api-data-expenses
+
+#Script Postgres
+https://github.com/troquatte/finance-db-postgres
+
+```
+
 ---
 
 Por ♥ Dener Troquatte :wave: [Linkedin!](https://www.linkedin.com/in/dener-s%C3%A3o-pedro-troquatte-ababa079/) | [Blog!](https://vidafullstack.com.br/)
