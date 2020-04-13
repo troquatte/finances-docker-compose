@@ -1,0 +1,125 @@
+version: '3'
+services:
+    postgres:
+        image: finances-postgres
+        container_name: postgres
+        environment:
+            - POSTGRES_PASSWORD=docker
+        ports:
+            - 5432:5432
+
+    gateway:
+        image: finance-api-gateway
+        working_dir: /usr/src/finance-api
+        ports:
+          - "3333:3333"
+        environment:
+          - HOST=0.0.0.0
+          - PORT=3333
+          - NODE_ENV=development
+          - APP_NAME=AdonisJs
+          - APP_URL=http://0.0.0.0:3333
+          - CACHE_VIEWS=false
+          - APP_KEY=0LzkZcsFcKmjzB1gWDuBHS8YrZatBJqa
+          - SDB_CONNECTION=pg
+          - SDB_HOST=postgres
+          - SDB_PORT=5432
+          - SDB_USER=postgres
+          - SDB_PASSWORD=docker
+          - SDB_DATABASE=finances
+          - HASH_DRIVER=bcrypt
+          - ROUTE_BALANCE=http://balance:1010
+          - ROUTE_EXPENSE=http://expenses:2020
+          - ROUTE_DATA_EXP=http://data-expenses:3030
+        depends_on:
+          - "postgres"
+        links:
+          - "balance"
+          - "expenses"
+          - "data-expenses"
+        entrypoint:
+          - /bin/sh
+          - -c
+          - "adonis migration:run && adonis seed && npm start"
+
+    balance:
+        image: finance-api-balance
+        working_dir: /usr/src/finance-api
+        ports:
+          - "1010:1010"
+        environment:
+          - HOST=0.0.0.0
+          - PORT=1010
+          - NODE_ENV=development
+          - APP_NAME=AdonisJs
+          - APP_URL=http://0.0.0.0:1010
+          - CACHE_VIEWS=false
+          - APP_KEY=0LzkZcsFcKmjzB1gWDuBHS8YrZatBJqa
+          - SDB_CONNECTION=pg
+          - SDB_HOST=postgres
+          - SDB_PORT=5432
+          - SDB_USER=postgres
+          - SDB_PASSWORD=docker
+          - SDB_DATABASE=finances
+          - HASH_DRIVER=bcrypt
+          - ROUTE_GATWAY=http://0.0.0.0:3333
+        depends_on:
+          - "postgres"
+          - "expenses"
+          - "data-expenses"
+
+    expenses:
+        image: finance-api-expenses
+        working_dir: /usr/src/finance-api
+        ports:
+          - "2020:2020"
+        environment:
+          - HOST=0.0.0.0
+          - PORT=2020
+          - NODE_ENV=development
+          - APP_NAME=AdonisJs
+          - APP_URL=http://0.0.0.0:2020
+          - CACHE_VIEWS=false
+          - APP_KEY=0LzkZcsFcKmjzB1gWDuBHS8YrZatBJqa
+          - SDB_CONNECTION=pg
+          - SDB_HOST=postgres
+          - SDB_PORT=5432
+          - SDB_USER=postgres
+          - SDB_PASSWORD=docker
+          - SDB_DATABASE=finances
+          - HASH_DRIVER=bcrypt
+          - ROUTE_GATWAY=http://0.0.0.0:3333
+        depends_on:
+          - "postgres"
+
+    data-expenses:
+        image: finance-api-data-expenses
+        working_dir: /usr/src/finance-api
+        ports:
+          - "3030:3030"
+        environment:
+          - HOST=0.0.0.0
+          - PORT=3030
+          - NODE_ENV=development
+          - APP_NAME=AdonisJs
+          - APP_URL=http://0.0.0.0:3030
+          - CACHE_VIEWS=false
+          - APP_KEY=0LzkZcsFcKmjzB1gWDuBHS8YrZatBJqa
+          - SDB_CONNECTION=pg
+          - SDB_HOST=postgres
+          - SDB_PORT=5432
+          - SDB_USER=postgres
+          - SDB_PASSWORD=docker
+          - SDB_DATABASE=finances
+          - HASH_DRIVER=bcrypt
+          - ROUTE_GATWAY=http://0.0.0.0:3333
+        depends_on:
+          - "postgres"
+
+    web:
+        image: finance-front-end
+        working_dir: /app
+        ports:
+          - "4200:4200"
+        links:
+          - "gateway"
