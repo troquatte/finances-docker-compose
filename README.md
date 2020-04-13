@@ -17,6 +17,8 @@ Arquitetura e criação do back-end ( microserviços ), front-end e docker ( com
 
 <strong>Micro serviços Back-end:</strong> Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
 
+<strong>Banco de dados postgres:</strong> o uso está relacionadas à economia e ao alto desempenho para plataforma. 
+
 <br>
  <img src="https://vidafullstack.com.br/wp-content/uploads/2020/04/download.jpg" alt="" width="100%">
 <br>
