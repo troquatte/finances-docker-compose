@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt="" width="150">
+  <img src="https://vidafullstack.com.br/wp-content/uploads/2020/04/angular.png" alt="" width="150">
   <br>
     Desafio feito para Vaga Engenheiro Front-end Itaú.
 </h1>
@@ -16,6 +16,10 @@ Arquitetura e criação do back-end ( microserviços ), front-end e docker ( com
 </ul>
 
 <strong>Micro serviços Back-end:</strong> Feito em nodeJs com framework adonisJs, uma ferramenta bem rápida e fácil de ser usada e apropriada para o uso de Micro serviços.
+
+<br>
+ <img src="https://vidafullstack.com.br/wp-content/uploads/2020/04/download.jpg" alt="" width="100%">
+<br>
 
 ## :information_source: Como usar?
 
